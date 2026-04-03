@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Idle Empire</string>
+    <string name="nav_tap">Tap</string>
+    <string name="nav_business">Business</string>
+</resources>

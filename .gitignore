@@ -1,0 +1,39 @@
+# Android/Gradle build outputs
+.gradle/
+build/
+**/build/
+
+# Local SDK path (machine-specific)
+local.properties
+
+# Android Studio/IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Keystore and signing files
+*.jks
+*.keystore
+*.p12
+*.pem
+
+# Google/Firebase service config (keep private for public repos)
+google-services.json
+app/google-services.json
+
+# Generated files
+captures/
+.externalNativeBuild/
+.cxx/
+
+# OS/Tooling cache
+.gradle-cache/

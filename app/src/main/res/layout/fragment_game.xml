@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/background"
+    android:padding="24dp">
+
+    <!-- Top stats row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvPrestigeLevel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="⭐ Prestige 0"
+            android:textColor="@color/gold"
+            android:textSize="13sp"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/tvMultiplier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="x1 multiplier"
+            android:textColor="@color/accent_blue"
+            android:textSize="13sp"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <!-- Coin display card -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        style="@style/CardStyle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💰 0"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+            <TextView
+                android:id="@+id/tvCoinsPerSec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1 per tap"
+                android:textSize="14sp"
+                android:textColor="@color/accent_green"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- TAP BUTTON — big circle -->
+    <Button
+        android:id="@+id/btnTap"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:text="💰\nTAP!"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_tap_circle"
+        android:stateListAnimator="@null"
+        android:layout_marginBottom="40dp"
+        android:elevation="8dp"/>
+
+    <!-- Prestige button -->
+    <Button
+        android:id="@+id/btnPrestige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⭐  PRESTIGE  (Needs 1T earned)"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="@color/gold"
+        android:enabled="false"
+        android:alpha="0.4"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="10dp"/>
+
+</LinearLayout>
